@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JURISTECH — Innovación, Derecho & Pedagogía Digital</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Plataforma académica y profesional sobre la integración de Inteligencia Artificial, Realidad Aumentada, Blockchain y LegalTech en el ejercicio y la docencia del Derecho.">
+  <meta name="author" content="Plataforma de Innovación Jurídica">
+  <meta name="keywords" content="Derecho, LegalTech, Inteligencia Artificial Jurídica, Estudio de Títulos, Sucesiones, Derecho Notarial, Derecho Inmobiliario, Pedagogía Jurídica">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JURISTECH — Innovación y Pedagogía Jurídica Digital">
+  <meta property="og:description" content="Derecho + Tecnología + Pensamiento Jurídico + Educación. Casos prácticos e interacción tecnológica aplicada al ejercicio legal.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Fira+Code:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVEGACIÓN PRINCIPAL
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="JurisTech Inicio">
+        <!-- Isotipo Original de JurisTech (Balanza + Escudo + Nodo Digital) -->
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="40" height="40" rx="10" fill="#0F2038"/>
+          <path d="M20 6L28 10V18C28 23.5 24.6 28.6 20 30C15.4 28.6 12 23.5 12 18V10L20 6Z" stroke="#D4AF37" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M20 12V24M15 16H25M15 16L12 21H18L15 16ZM25 16L22 21H28L25 16Z" stroke="#D4AF37" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="20" cy="24" r="2" fill="#2575FC"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">JURIS<span>TECH</span></span>
+          <span class="brand-subtitle">Innovación & Pedagogía Jurídica</span>
+        </div>
+      </a>
+
+      <!-- Menú Desktop -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="#introduccion" class="nav-link">Pilares</a></li>
+          <li><a href="#casos" class="nav-link">Casos Prácticos</a></li>
+          <li><a href="#dashboard" class="nav-link">Panel Interactivo</a></li>
+          <li><a href="#docencia" class="nav-link">Docencia</a></li>
+          <li><a href="#practica" class="nav-link">Práctica Profesional</a></li>
+          <li><a href="#etica" class="nav-link">Ética</a></li>
+        </ul>
+      </nav>
+
+      <!-- Acciones (Selector Tema y Botón Móvil) -->
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Cambiar tema">
+          <!-- Icono inyectado vía JS -->
+        </button>
+
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Abrir menú" aria-expanded="false">
+          <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú desplegable Móvil -->
+    <div id="mobileNavDrawer" class="mobile-nav-overlay">
+      <ul class="mobile-nav-links">
+        <li><a href="#introduccion">Pilares Tecnológicos</a></li>
+        <li><a href="#casos">Casos de Uso Jurídicos</a></li>
+        <li><a href="#dashboard">Panel Interactivo</a></li>
+        <li><a href="#docencia">Tecnología en Docencia</a></li>
+        <li><a href="#practica">Mi Práctica Profesional</a></li>
+        <li><a href="#etica">Ética y Responsabilidad</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         SECCIÓN 1: HERO
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            Transformación Digital del Aprendizaje Jurídico
+          </div>
+          <h1 class="hero-title">
+            Derecho + Tecnología + <span class="gradient-text">Pensamiento Jurídico</span> + Educación
+          </h1>
+          <p class="hero-description">
+            Una plataforma interactiva diseñada desde la perspectiva de la formación jurídica avanzada, enfocada en cómo la inteligencia artificial, la analítica, la realidad mixta y la automatización potencian el criterio profesional del abogado contemporáneo.
+          </p>
+          <div class="hero-actions">
+            <a href="#casos" class="btn btn-primary">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              Explorar Casos Prácticos
+            </a>
+            <a href="#dashboard" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+              Panel Interactivo
+            </a>
+          </div>
+        </div>
+
+        <!-- Tarjeta de vista previa gráfica tecnológica -->
+        <div class="hero-visual">
+          <div class="hero-card-preview">
+            <div class="hero-card-header">
+              <div class="hero-card-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--lasalle-gold)"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+                LegalTech Core Ecosystem
+              </div>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--lasalle-gold);">v2.4 ONLINE</span>
+            </div>
+
+            <div class="hero-tech-nodes">
+              <div class="tech-node-item">
+                <div class="tech-node-icon">
+                  <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                </div>
+                <div class="tech-node-info">
+                  <h4>IA Razonamiento</h4>
+                  <p>Asistencia sintáctica y jurisprudencial.</p>
+                </div>
+              </div>
+
+              <div class="tech-node-item">
+                <div class="tech-node-icon">
+                  <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+                </div>
+                <div class="tech-node-info">
+                  <h4>Estudio Títulos</h4>
+                  <p>Capa inteligente de tradición de dominio.</p>
+                </div>
+              </div>
+
+              <div class="tech-node-item">
+                <div class="tech-node-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+                </div>
+                <div class="tech-node-info">
+                  <h4>Derecho Notarial</h4>
+                  <p>Pipeline digital de control de legalidad.</p>
+                </div>
+              </div>
+
+              <div class="tech-node-item">
+                <div class="tech-node-icon">
+                  <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM3.89 9L12 4.57 20.11 9 12 13.43 3.89 9z"/></svg>
+                </div>
+                <div class="tech-node-info">
+                  <h4>Docencia Activa</h4>
+                  <p>Simulaciones jurídicas interactivas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 2: INTRODUCCIÓN Y PILARES TECNOLÓGICOS
+         ========================================================================== -->
+    <section class="section" id="introduccion">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Fundamentación Tecnológica</span>
+          <h2 class="section-title">El Ecosistema Tecnológico del Derecho Moderno</h2>
+          <p class="section-description">
+            La transformación digital en el ámbito jurídico no implica reemplazar el criterio humano ni la hermenéutica tradicional, sino dotar al profesional de herramientas analíticas de precisión para la investigación, redacción y enseñanza.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+            </div>
+            <h3 class="pillar-title">Inteligencia Artificial</h3>
+            <p class="pillar-desc">Procesamiento de lenguaje natural para la extracción de subreglas jurisprudenciales, cotejo normativo y preparación de argumentos.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/></svg>
+            </div>
+            <h3 class="pillar-title">LegalTech & Automatización</h3>
+            <p class="pillar-desc">Sistemas de gestión documental, plantillas paramétricas para escrituras notariales y verificación de requisitos legales.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H4V6h16v13z"/></svg>
+            </div>
+            <h3 class="pillar-title">Realidad Aumentada y Mixta</h3>
+            <p class="pillar-desc">Visualización tridimensional de atributos dominicales, linderos inmuebles y desglose holográfico de instrumentos públicos.</p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+            </div>
+            <h3 class="pillar-title">Blockchain & Firma Digital</h3>
+            <p class="pillar-desc">Sellado de tiempo inmutable, conservación de evidencia digital y verificación de autenticidad en transacciones electrónicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 3: CASOS DE USO JURÍDICOS (MODULOS INTERACTIVOS)
+         ========================================================================== -->
+    <section class="section" id="casos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Aplicación Práctica</span>
+          <h2 class="section-title">Casos de Uso Jurídicos e Interacciones</h2>
+          <p class="section-description">
+            Explore escenarios interactivos donde la tecnología se integra directamente a las áreas clave del ejercicio legal e inmobiliario.
+          </p>
+        </div>
+
+        <!-- CASO 1: INTELIGENCIA ARTIFICIAL JURÍDICA -->
+        <article class="case-card-container">
+          <div class="case-card-header">
+            <div>
+              <span class="case-badge-num">CASO DE USO 01</span>
+              <h3 class="case-title">Inteligencia Artificial Jurídica & Investigación</h3>
+              <p class="case-subtitle">Análisis jurisprudencial comparativo y asistencia en la formulación de problemas jurídicos</p>
+            </div>
+          </div>
+
+          <div class="legal-ai-demo">
+            <div class="ai-input-box">
+              <div class="demo-header-label">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+                Parámetros de Investigación Jurídica
+              </div>
+              
+              <label for="aiPromptSelect" style="display:block; font-size:0.85rem; font-weight:700; margin-bottom:0.5rem;">Seleccionar Tema de Análisis:</label>
+              <select id="aiPromptSelect" class="ai-prompt-select">
+                <option value="jurisprudence">Responsabilidad Civil Médica — Obligación de Medio vs Resultado</option>
+                <option value="comparison">Validez Probatoria del Documento Electrónico (Ley 527 vs Código Civil)</option>
+                <option value="drafting">Esquema de Cláusula de Confidencialidad y Protección de Datos</option>
+              </select>
+
+              <button id="aiExecuteBtn" class="btn btn-primary" style="width: 100%;">
+                <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                Procesar Razonamiento Jurídico
+              </button>
+            </div>
+
+            <div class="ai-output-box" id="aiOutputBox">
+              <h4 style="font-size: 1rem; color: var(--lasalle-gold); margin-bottom: 0.75rem;">Análisis de Jurisprudencia: Responsabilidad Civil Médica</h4>
+              <div style="font-size: 0.88rem; line-height: 1.6;">
+                <strong>Fuentes Analizadas:</strong> Corte Suprema de Justicia, Sentencia SC-2023-1120.<br>
+                <strong>Subregla Aplicada:</strong> La obligación del médico especialista es generalmente de medio y no de resultado, salvo estipulación contractual garantizada.<br>
+                <strong>Carga probatoria:</strong> Corresponde a la víctima acreditar la culpa probada del profesional y el nexo causal directo.
+              </div>
+            </div>
+          </div>
+
+          <!-- ADVERTENCIA OBLIGATORIA DE IA -->
+          <div class="legal-warning-banner">
+            <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm1 14h-2v-2h2v2zm0-4h-2V8h2v4z"/></svg>
+            <p><strong>ADVERTENCIA ÉTICA:</strong> La inteligencia artificial apoya el razonamiento jurídico, pero no sustituye la responsabilidad profesional del abogado.</p>
+          </div>
+        </article>
+
+        <!-- CASO 2: DERECHO NOTARIAL -->
+        <article class="case-card-container">
+          <div class="case-card-header">
+            <div>
+              <span class="case-badge-num">CASO DE USO 02</span>
+              <h3 class="case-title">Derecho Notarial & Flujo de Control de Legalidad</h3>
+              <p class="case-subtitle">Trazabilidad del otorgamiento de escrituras públicas y verificación documental</p>
+            </div>
+          </div>
+
+          <div class="pipeline-flow">
+            <div class="pipeline-step active" data-step="1">
+              <div class="step-circle">1</div>
+              <span class="step-label">Minuta</span>
+            </div>
+            <div class="pipeline-step" data-step="2">
+              <div class="step-circle">2</div>
+              <span class="step-label">Estudio Títulos</span>
+            </div>
+            <div class="pipeline-step" data-step="3">
+              <div class="step-circle">3</div>
+              <span class="step-label">Control Legal</span>
+            </div>
+            <div class="pipeline-step" data-step="4">
+              <div class="step-circle">4</div>
+              <span class="step-label">Otorgamiento</span>
+            </div>
+            <div class="pipeline-step" data-step="5">
+              <div class="step-circle">5</div>
+              <span class="step-label">Registro</span>
+            </div>
+          </div>
+
+          <div id="notaryStepDetail" style="background: var(--bg-surface-elevated); padding: 1.25rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+            <h4 style="color: var(--lasalle-gold); font-size: 1.05rem; margin-bottom: 0.5rem;">1. Recepción y Minuta</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">El usuario o abogado radica el borrador del acto ante la notaría para inicio de trámite y verificación de identidad.</p>
+          </div>
+
+          <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.75rem;">Actos Notariales Soportados Digitalmente:</h4>
+          <div class="notary-acts-grid">
+            <div class="notary-act-chip selected" data-act="Compraventa de Inmuebles">Compraventa de Inmuebles</div>
+            <div class="notary-act-chip" data-act="Hipotecas & Cancelaciones">Hipotecas & Cancelaciones</div>
+            <div class="notary-act-chip" data-act="Donaciones y Permutas">Donaciones y Permutas</div>
+            <div class="notary-act-chip" data-act="Sucesiones Notariales">Sucesiones Notariales</div>
+            <div class="notary-act-chip" data-act="Divorcios Mutuo Acuerdo">Divorcios Mutuo Acuerdo</div>
+            <div class="notary-act-chip" data-act="Reglamento Propiedad Horizontal">Propiedad Horizontal</div>
+          </div>
+          <p id="selectedActText" style="font-size: 0.82rem; color: var(--lasalle-gold); margin-top: 0.85rem; font-weight: 700;">Acto Notarial Seleccionado: Compraventa de Inmuebles</p>
+        </article>
+
+        <!-- CASO 3: DERECHO INMOBILIARIO & ESTUDIO DE TÍTULOS INTELIGENTE -->
+        <article class="case-card-container">
+          <div class="case-card-header">
+            <div>
+              <span class="case-badge-num">CASO DE USO 03</span>
+              <h3 class="case-title">Derecho Inmobiliario — Estudio de Títulos Inteligente</h3>
+              <p class="case-subtitle">Inspección por capas jurídicas sobre la propiedad raíz</p>
+            </div>
+          </div>
+
+          <div class="real-estate-interactive">
+            <div class="blueprint-container">
+              <div class="house-svg-wrapper">
+                <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+              </div>
+              <h4 id="layerTitleDisplay" style="font-size: 1.1rem; margin-bottom: 0.4rem;">Matrícula Inmobiliaria No. 001-492041</h4>
+              <span id="layerStatusDisplay" class="layer-status status-clean">SIN AFECCIONES</span>
+              <p id="layerDescDisplay" style="font-size: 0.85rem; margin-top: 0.75rem; color: var(--text-muted);">
+                Registro único del inmueble. Consta de Folio Abierto en la Oficina de Registro de Instrumentos Públicos. Activo y sin duplicidad.
+              </p>
+            </div>
+
+            <div class="title-study-layers">
+              <div class="layer-item active" data-layer="matricula">
+                <div>
+                  <div class="layer-info-title">Matrícula Inmobiliaria & Tradición</div>
+                  <span style="font-size: 0.75rem; color: var(--text-subtle);">Estado del folio y tracto sucesivo</span>
+                </div>
+                <span class="layer-status status-clean">OK</span>
+              </div>
+
+              <div class="layer-item" data-layer="tradicion">
+                <div>
+                  <div class="layer-info-title">Estudio de Tradición (20 Años)</div>
+                  <span style="font-size: 0.75rem; color: var(--text-subtle);">Verificación de vendedores anteriores</span>
+                </div>
+                <span class="layer-status status-clean">OK</span>
+              </div>
+
+              <div class="layer-item" data-layer="gravamenes">
+                <div>
+                  <div class="layer-info-title">Gravámenes e Hipotecas</div>
+                  <span style="font-size: 0.75rem; color: var(--text-subtle);">Cargas o garantias bancarias</span>
+                </div>
+                <span class="layer-status status-warning">ALERTA</span>
+              </div>
+
+              <div class="layer-item" data-layer="limitaciones">
+                <div>
+                  <div class="layer-info-title">Limitaciones al Dominio / Embargos</div>
+                  <span style="font-size: 0.75rem; color: var(--text-subtle);">Afectación vivienda o embargos</span>
+                </div>
+                <span class="layer-status status-clean">OK</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO 4: SUCESIONES -->
+        <article class="case-card-container">
+          <div class="case-card-header">
+            <div>
+              <span class="case-badge-num">CASO DE USO 04</span>
+              <h3 class="case-title">Sucesiones — Simulación de Partición Herencial</h3>
+              <p class="case-subtitle">Organización digital de causante, activos, pasivos, inventarios e hijuelas herenciales</p>
+            </div>
+          </div>
+
+          <div class="succession-calc">
+            <div class="calc-inputs">
+              <div class="form-group">
+                <label for="succAssets">Activos Totales de la Masa ($ COP):</label>
+                <input type="number" id="succAssets" class="form-control" value="600000000" step="10000000">
+              </div>
+
+              <div class="form-group">
+                <label for="succDebts">Pasivos / Deudas Sucesoral ($ COP):</label>
+                <input type="number" id="succDebts" class="form-control" value="100000000" step="5000000">
+              </div>
+
+              <div class="form-group">
+                <label for="succHeirsCount">Número de Herederos (Orden 1º):</label>
+                <input type="number" id="succHeirsCount" class="form-control" value="2" min="1" max="10">
+              </div>
+
+              <div class="form-group" style="display:flex; align-items:center; gap:0.5rem;">
+                <input type="checkbox" id="succSpouse" checked style="width: 18px; height: 18px; accent-color: var(--lasalle-gold);">
+                <label for="succSpouse" style="margin-bottom:0; cursor:pointer;">¿Existe Cónyuge Sobreviviente? (Gananciales)</label>
+              </div>
+
+              <button id="succCalcBtn" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">
+                Simular Liquidación Sucesoral
+              </button>
+            </div>
+
+            <div class="calc-results">
+              <h4 style="color: var(--lasalle-gold); font-size: 1rem; margin-bottom: 1rem;">Distribución Cuantitativa Estimada</h4>
+              <div class="partition-breakdown">
+                <div class="breakdown-row">
+                  <span>Acervo Líquido Sucesoral:</span>
+                  <strong id="succNetLiquidity">$ 500.000.000</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Porción Cónyuge (Gananciales 50%):</span>
+                  <strong id="succSpouseShare">$ 250.000.000</strong>
+                </div>
+                <div class="breakdown-row">
+                  <span>Hijuela por Heredero:</span>
+                  <strong id="succHeirShare">$ 125.000.000 (Total: 2)</strong>
+                </div>
+              </div>
+              <p style="font-size: 0.75rem; color: var(--text-subtle); margin-top: 1rem; font-style: italic;">
+                * Representación meramente pedagógica y didáctica. No constituye liquidación jurídica ni asesoría tributaria vinculante.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO 5: REALIDAD AUMENTADA Y MIXTA EN EL DERECHO -->
+        <article class="case-card-container">
+          <div class="case-card-header">
+            <div>
+              <span class="case-badge-num">CASO DE USO 05</span>
+              <h3 class="case-title">Realidad Aumentada (AR) & Realidad Mixta (MR) en el Derecho</h3>
+              <p class="case-subtitle">Prototipos conceptuales para la inspección espacial de evidencias e instrumentos públicos</p>
+            </div>
+          </div>
+
+          <div class="ar-preview-container">
+            <div class="ar-scan-line"></div>
+            <div class="ar-hud-overlay">
+              <span>SYS_AR // HOLOGRAPHIC LEGAL HUD</span>
+              <span>STATE: ACTIVE PROTOTYPE</span>
+            </div>
+
+            <div style="margin-top: 2rem;">
+              <span class="ar-concept-tag">Escenario Futuro / Prototipo Conceptual</span>
+              <h4 id="arHudTitle" style="font-size: 1.4rem; color: #FFFFFF; margin-bottom: 0.75rem;">
+                CAPA AR: LINDEROS Y REGISTRO EN TIEMPO REAL
+              </h4>
+              <p id="arHudDesc" style="font-size: 0.95rem; color: #CBD5E1; max-width: 680px; margin: 0 auto 2rem auto;">
+                Visualización holográfica proyectada sobre estructura física. Matrícula: 001-492041 | Área: 142.5 m² | Coordenadas GPS vinculadas al catastro.
+              </p>
+
+              <div style="display:flex; justify-content:center; gap:1rem; flex-wrap:wrap;">
+                <button class="btn btn-primary ar-mode-btn" data-ar-mode="inmueble">Inspección Inmueble AR</button>
+                <button class="btn btn-secondary ar-mode-btn" data-ar-mode="escritura">Estructura 3D Escritura Pública</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO 6: BLOCKCHAIN Y DERECHO -->
+        <article class="case-card-container">
+          <div class="case-card-header">
+            <div>
+              <span class="case-badge-num">CASO DE USO 06</span>
+              <h3 class="case-title">Blockchain & Trazabilidad de Evidencia Digital</h3>
+              <p class="case-subtitle">Smart contracts, sellado inmutable de documentos y límites jurídicos de la cadena de bloques</p>
+            </div>
+          </div>
+
+          <div class="blockchain-nodes-flow">
+            <div class="block-card">
+              <div class="block-header">BLOQUE #1042 — MINUTA</div>
+              <div class="block-hash">Hash: 0x7f8a9...b12</div>
+              <p style="font-size: 0.78rem; margin-top:0.5rem; color: var(--text-muted);">Timestamp: 2026-09-10</p>
+            </div>
+
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--lasalle-gold)"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+
+            <div class="block-card">
+              <div class="block-header">BLOQUE #1043 — FIRMA</div>
+              <div class="block-hash">Hash: 0x3d2e1...f90</div>
+              <p style="font-size: 0.78rem; margin-top:0.5rem; color: var(--text-muted);">Biometría Verificada</p>
+            </div>
+
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--lasalle-gold)"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+
+            <div class="block-card">
+              <div class="block-header">BLOQUE #1044 — REGISTRO</div>
+              <div class="block-hash">Hash: 0x9a8b7...c34</div>
+              <p style="font-size: 0.78rem; margin-top:0.5rem; color: var(--text-muted);">Sello Notarial Digital</p>
+            </div>
+          </div>
+
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-top:1.5rem; flex-wrap:wrap; gap:1rem;">
+            <button id="bchainVerifyBtn" class="btn btn-secondary">Simular Hash SHA-256 de Escritura</button>
+            <div id="bchainHashOutput" style="font-family:var(--font-mono); font-size:0.82rem; color:var(--text-muted);">Esperando verificación...</div>
+          </div>
+        </article>
+
+        <!-- CASO 7: ECOSISTEMA LEGALTECH -->
+        <article class="case-card-container">
+          <div class="quote-banner">
+            <p class="quote-text">"El abogado del futuro no será reemplazado por la tecnología; será reemplazado por quien sepa utilizarla mejor."</p>
+            <span class="quote-author">— Axioma de la Transformación LegalTech</span>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--lasalle-gold);">Automatización Documental</h4>
+              <p class="pillar-desc">Generación paramétrica de contratos complejos con reducción del 80% en tiempo de borrador inicial.</p>
+            </div>
+
+            <div class="pillar-card">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--lasalle-gold);">Gestión de Casos (CRM Jurídico)</h4>
+              <p class="pillar-desc">Seguimiento de términos procesales, actuaciones en estrados y notificaciones de despachos en tiempo real.</p>
+            </div>
+
+            <div class="pillar-card">
+              <h4 style="font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--lasalle-gold);">Analítica de Datos Judiciales</h4>
+              <p class="pillar-desc">Predicción de tendencias decisionales de tribunales basadas en minería de datos de providencias previas.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO 8: TECNOLOGÍA EN LA DOCENCIA JURÍDICA -->
+        <article class="case-card-container" id="docencia">
+          <div class="case-card-header">
+            <div>
+              <span class="case-badge-num">CASO DE USO 08</span>
+              <h3 class="case-title">Tecnología Aplicada a la Docencia Jurídica</h3>
+              <p class="case-subtitle">10 Estrategias de Innovación Pedagógica en las Aulas de Derecho</p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <p style="font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700; color: var(--lasalle-gold);">
+              "Aprender Derecho haciendo, analizando y tomando decisiones."
+            </p>
+          </div>
+
+          <div class="pedagogy-grid">
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 01</div>
+              <h4 class="sim-title">Simulación de Audiencia Virtual</h4>
+              <p class="sim-desc">Juegos de rol jurídicos en entornos digitales interactivos con evaluación de técnicas de litigación oral.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 02</div>
+              <h4 class="sim-title">Simulación de Negociación</h4>
+              <p class="sim-desc">Técnicas MASC asistidas por algoritmos de conciliación y teoría de juegos para mediación de conflictos.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 03</div>
+              <h4 class="sim-title">Análisis Interactivo de Sentencias</h4>
+              <p class="sim-desc">Desglose semántico de parte motiva y resolutiva en providencias hito de altas cortes.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 04</div>
+              <h4 class="sim-title">Líneas Jurisprudenciales</h4>
+              <p class="sim-desc">Construcción gráfica de balance constitucional desde sentencia hito hasta sentencia modificatoria.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 05</div>
+              <h4 class="sim-title">Simulación de Sucesión</h4>
+              <p class="sim-desc">Ejercicios prácticos con masas patrimoniales complejas y multiplicidad de herederos.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 06</div>
+              <h4 class="sim-title">Estudio de Títulos Inmobiliarios</h4>
+              <p class="sim-desc">Auditoría real de folios de matrícula y escrituras históricas para identificar vicios ocultos.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 07</div>
+              <h4 class="sim-title">Simulación Escritura Pública</h4>
+              <p class="sim-desc">Redacción notarial en vivo con control automatizado de solemnidades constitucionales.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 08</div>
+              <h4 class="sim-title">Casos Jurídicos Interactivos</h4>
+              <p class="sim-desc">Historias clínicas de caso con ramificación de decisiones procesales y consecuencias jurídicas.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 09</div>
+              <h4 class="sim-title">Mapas Conceptuales Jurídicos</h4>
+              <p class="sim-desc">Estructuración gráfica de la teoría general del delito y del contrato mediante nodos informáticos.</p>
+            </div>
+
+            <div class="sim-card">
+              <div class="sim-num">MÓDULO 10</div>
+              <h4 class="sim-title">Realidad Aumentada en el Aula</h4>
+              <p class="sim-desc">Visualización de prueba pericial y reconstrucción de hechos mediante modelos 3D proyectados.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 4: PANEL INTERACTIVO (DASHBOARD)
+         ========================================================================== -->
+    <section class="section" id="dashboard">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Herramientas por Modo de Trabajo</span>
+          <h2 class="section-title">Panel Interactivo del Abogado e Investigador</h2>
+          <p class="section-description">
+            Seleccione la actividad jurídica a realizar para visualizar las herramientas tecnológicas y prompts optimizados aplicables.
+          </p>
+        </div>
+
+        <div class="dashboard-wrapper">
+          <div class="dashboard-tabs">
+            <button class="dash-tab-btn active" data-dash-mode="ESTUDIAR">ESTUDIAR</button>
+            <button class="dash-tab-btn" data-dash-mode="INVESTIGAR">INVESTIGAR</button>
+            <button class="dash-tab-btn" data-dash-mode="ANALIZAR">ANALIZAR</button>
+            <button class="dash-tab-btn" data-dash-mode="REDACTAR">REDACTAR</button>
+            <button class="dash-tab-btn" data-dash-mode="SIMULAR">SIMULAR</button>
+            <button class="dash-tab-btn" data-dash-mode="ENSEÑAR">ENSEÑAR</button>
+          </div>
+
+          <div class="dash-content-panel">
+            <div>
+              <h4 style="font-size: 1rem; color: var(--lasalle-gold); margin-bottom: 1rem;">Herramientas Sugeridas:</h4>
+              <div class="dash-tools-list" id="dashToolsContainer">
+                <div class="dash-tool-card">
+                  <div class="dash-tool-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  </div>
+                  <div class="dash-tool-info">
+                    <h4>Simulador de Casos Complejos</h4>
+                    <p>Plataforma de estudio de casos reales anonimizados para entrenamiento en argumentación.</p>
+                  </div>
+                </div>
+
+                <div class="dash-tool-card">
+                  <div class="dash-tool-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  </div>
+                  <div class="dash-tool-info">
+                    <h4>Mapas Conceptuales Dinámicos</h4>
+                    <p>Generación automática de redes semánticas entre códigos, doctrinas y jurisprudencias.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div style="background: var(--bg-surface-elevated); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+              <h4 style="font-size: 1rem; color: var(--lasalle-gold); margin-bottom: 0.75rem;">Prompt de Asistencia Especializado:</h4>
+              <p id="dashPromptText" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-main); line-height: 1.6;">
+                Prompt sugerido: 'Resume la línea jurisprudencial sobre daño extrapatrimonial en los últimos 5 años destacando los cambios de criterio.'
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 5: MI PRÁCTICA PROFESIONAL
+         ========================================================================== -->
+    <section class="section" id="practica">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Perfil y Visión Profesional</span>
+          <h2 class="section-title">Mi Práctica Jurídica</h2>
+          <p class="section-description">
+            Integración del conocimiento jurídico riguroso con herramientas tecnológicas de última generación para una asesoría precisa, ética y eficiente.
+          </p>
+        </div>
+
+        <div class="practice-grid">
+          <div class="practice-card">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--lasalle-gold);">Estudio de Títulos & Inmobiliario</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Auditoría exhaustiva de la propiedad raíz combinando verificación documental física y bases de datos registrales automatizadas.</p>
+          </div>
+
+          <div class="practice-card">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--lasalle-gold);">Derecho Notarial & Contratos</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Asesoría en el estructuramiento de escrituras públicas, sucesiones, donaciones y liquidaciones conyugales de alta complejidad.</p>
+          </div>
+
+          <div class="practice-card">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; color: var(--lasalle-gold);">Investigación y Docencia Digital</h3>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Formación pedagógica continua para transformar la enseñanza del Derecho mediante simulaciones y metodologías activas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN 6: ÉTICA Y RESPONSABILIDAD JURÍDICA
+         ========================================================================== -->
+    <section class="section" id="etica">
+      <div class="container">
+        <div class="ethics-box">
+          <h2 style="font-size: 1.8rem; margin-bottom: 0.75rem;">Ética, Privacidad y Responsabilidad Profesional</h2>
+          <p style="font-size: 1.05rem; color: var(--lasalle-gold); font-weight: 700;">
+            "La tecnología puede acelerar el trabajo jurídico; la responsabilidad de la decisión continúa siendo humana."
+          </p>
+
+          <div class="ethics-list">
+            <div class="ethics-item">
+              <div class="ethics-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm1 14h-2v-2h2v2zm0-4h-2V8h2v4z"/></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 0.95rem; margin-bottom: 0.25rem;">Control de Alucinaciones de IA</h4>
+                <p style="font-size: 0.84rem; color: var(--text-muted);">Verificación humana obligatoria de citas de jurisprudencia y artículos normativos sugeridos por modelos generativos.</p>
+              </div>
+            </div>
+
+            <div class="ethics-item">
+              <div class="ethics-icon">
+                <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 0.95rem; margin-bottom: 0.25rem;">Secreto Profesional y Privacidad</h4>
+                <p style="font-size: 0.84rem; color: var(--text-muted);">Protección de datos confidenciales de clientes evitando la fuga de información en servidores de IA no gubernados.</p>
+              </div>
+            </div>
+
+            <div class="ethics-item">
+              <div class="ethics-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+              </div>
+              <div>
+                <h4 style="font-size: 0.95rem; margin-bottom: 0.25rem;">Mitigación de Sesgos Algorítmicos</h4>
+                <p style="font-size: 0.84rem; color: var(--text-muted);">Evaluación crítica de los conjuntos de entrenamiento judiciales para garantizar la equidad y el debido proceso.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>JURISTECH</h3>
+          <p>Plataforma académica y profesional de innovación en el Derecho, la tecnología y la docencia jurídica digital.</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#introduccion">Pilares Tecnológicos</a></li>
+            <li><a href="#casos">Casos de Uso Jurídicos</a></li>
+            <li><a href="#dashboard">Panel Interactivo</a></li>
+            <li><a href="#docencia">Docencia e Innovación</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Áreas Jurídicas</h4>
+          <ul>
+            <li><a href="#casos">Derecho Notarial</a></li>
+            <li><a href="#casos">Derecho Inmobiliario</a></li>
+            <li><a href="#casos">Sucesiones & Herencias</a></li>
+            <li><a href="#etica">Ética y Algoritmos</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 JurisTech — Desarrollado en HTML5, CSS3 y JavaScript Vanilla. Inspirado conceptualmente en la excelencia de la Corporación Universitaria Lasallista.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+</html>
